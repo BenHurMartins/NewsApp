@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Header snapshot test 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#65a1dd",
+      "flexDirection": "row",
+      "height": 60,
+      "width": 750,
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": 75,
+      }
+    }
+  />
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontSize": 37.5,
+        "fontWeight": "500",
+        "textAlign": "center",
+        "width": 600,
+      }
+    }
+  >
+    Test
+  </Text>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "width": 75,
+      }
+    }
+  />
+</View>
+`;

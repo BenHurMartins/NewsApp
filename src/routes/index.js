@@ -1,13 +1,13 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createStackNavigator} from '@react-navigation/stack';
 
 //  Screens/scenes
 import Home from '../scenes/Home';
 import News from '../scenes/News';
 
 const Routes = () => {
-  const Stack = createNativeStackNavigator();
+  const Stack = createStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>

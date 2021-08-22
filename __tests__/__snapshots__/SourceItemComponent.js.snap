@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SourceItemComponent component SourceItemComponent snapshot test 1`] = `
+Array [
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "padding": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "marginBottom": 10,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#65a1dd",
+            "fontSize": 30,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Ben Hur News
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "height": 60,
+          "marginBottom": 10,
+          "width": "90%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 22.5,
+            "fontWeight": "200",
+            "textAlign": "justify",
+          }
+        }
+      >
+        Lorem ipsum dolor sit amet
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+          "width": "90%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 20.5,
+            "fontWeight": "200",
+            "textAlign": "justify",
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        https
+      </Text>
+    </View>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#65a1dd",
+          "height": 1,
+          "width": 750,
+        },
+        Object {
+          "alignSelf": "center",
+          "width": 675,
+        },
+      ]
+    }
+  />,
+]
+`;

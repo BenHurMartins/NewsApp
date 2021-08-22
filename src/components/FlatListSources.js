@@ -12,7 +12,7 @@ const FlatListSources = () => {
   const orientation = useDeviceOrientation();
   const dinamicWidth = orientation.portrait
     ? Mixins.DEVICE_WIDTH
-    : Mixins.DEVICE_HEIGHT / 2;
+    : Mixins.DEVICE_HEIGHT / 2 - 60;
 
   useEffect(async () => {
     await getSources().then(response => {

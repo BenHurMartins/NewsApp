@@ -1,9 +1,9 @@
 import React from 'react';
 import {Text, StyleSheet, TouchableOpacity, View, Linking} from 'react-native';
 import {Colors, Mixins} from '../styles';
-import {Divider} from './';
+import {Divider, UrlTextComponent} from './';
 import {useDispatch} from 'react-redux';
-import {SET_ID} from '../reducers/actionsTypes';
+import {SET_ID, SET_SOURCE} from '../reducers/actionsTypes';
 import {useDeviceOrientation} from '@react-native-community/hooks';
 import {useNavigation} from '@react-navigation/native';
 
@@ -14,6 +14,7 @@ const SourceItemComponent = ({source}) => {
 
   const handleClick = () => {
     dispatch({type: SET_ID, payload: source.id});
+    dispatch({type: SET_SOURCE, payload: source.name});
     if (orientation.portrait) navigation.navigate('News');
   };
 
@@ -26,11 +27,7 @@ const SourceItemComponent = ({source}) => {
         <View style={styles.descriptionContainer}>
           <Text style={styles.description}>{source.description}</Text>
         </View>
-        <TouchableOpacity
-          style={styles.linkContainer}
-          onPress={() => Linking.openURL(source.url)}>
-          <Text>{source.url}</Text>
-        </TouchableOpacity>
+        <UrlTextComponent url={source.url} />
       </TouchableOpacity>
       <Divider style={{alignSelf: 'center', width: Mixins.DEVICE_WIDTH90}} />
     </>

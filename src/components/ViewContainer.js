@@ -4,9 +4,12 @@ import {Colors, Mixins} from '../styles';
 
 const ViewContainer = props => {
   return (
-    <SafeAreaView style={[styles.container, props.style]}>
-      {props.children}
-    </SafeAreaView>
+    <>
+      <SafeAreaView style={{flex: 0, backgroundColor: Colors.PRIMARY}} />
+      <SafeAreaView style={[styles.container, props.style]}>
+        {props.children}
+      </SafeAreaView>
+    </>
   );
 };
 

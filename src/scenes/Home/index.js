@@ -4,6 +4,7 @@ import {
   ViewContainer,
   FlatListNews,
   Header,
+  VerticalDivider,
 } from '../../components';
 import {useDeviceOrientation} from '@react-native-community/hooks';
 const Home = () => {
@@ -11,12 +12,13 @@ const Home = () => {
 
   return orientation.portrait ? (
     <ViewContainer>
-      <Header title={'Your Definitive Source of Information'} />
+      <Header title={'News App'} />
       <FlatListSources />
     </ViewContainer>
   ) : (
     <ViewContainer style={{flexDirection: 'row'}}>
       <FlatListSources />
+      <VerticalDivider />
       <FlatListNews />
     </ViewContainer>
   );

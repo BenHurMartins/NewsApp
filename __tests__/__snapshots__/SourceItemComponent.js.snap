@@ -60,6 +60,7 @@ Array [
             "fontSize": 22.5,
             "fontWeight": "200",
             "textAlign": "justify",
+            "width": "100%",
           }
         }
       >

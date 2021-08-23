@@ -8,14 +8,16 @@ import {useDeviceOrientation} from '@react-native-community/hooks';
 import {useNavigation} from '@react-navigation/native';
 
 const SourceItemComponent = ({source}) => {
-  const orientation = useDeviceOrientation();
   const navigation = useNavigation();
   const dispatch = useDispatch();
+  const orientation = useDeviceOrientation();
 
   const handleClick = () => {
     dispatch({type: SET_ID, payload: source.id});
     dispatch({type: SET_SOURCE, payload: source.name});
-    if (orientation.portrait) navigation.navigate('News');
+    if (orientation.portrait) {
+      navigation.navigate('News');
+    }
   };
 
   return (
@@ -60,6 +62,7 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: Mixins.FONT_SIZE_SMALL,
+    width: '100%',
     fontWeight: '200',
     textAlign: 'justify',
   },

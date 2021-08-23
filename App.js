@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Routes from './src/routes';
-// import SplashScreen from 'react-native-splash-screen';
+import SplashScreen from 'react-native-splash-screen';
 
 //Redux
 import reducers from './src/reducers';
@@ -9,6 +9,10 @@ import {createStore} from 'redux';
 const store = createStore(reducers);
 
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+
   return (
     <Provider store={store}>
       <Routes />

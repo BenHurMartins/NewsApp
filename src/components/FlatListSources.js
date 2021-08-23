@@ -12,7 +12,7 @@ const FlatListSources = () => {
   const orientation = useDeviceOrientation();
   const dinamicWidth = orientation.portrait
     ? Mixins.DEVICE_WIDTH
-    : Mixins.DEVICE_HEIGHT / 2 - 60;
+    : Mixins.DEVICE_HEIGHT / 2 - 30;
 
   useEffect(async () => {
     await getSources().then(response => {
@@ -28,8 +28,6 @@ const FlatListSources = () => {
       data={sources}
       renderItem={renderItem}
       keyExtractor={(item, index) => item.id}
-      // onEndReached={getMoreResults}
-      onEndReachedThreshold={0.7}
     />
   );
 };

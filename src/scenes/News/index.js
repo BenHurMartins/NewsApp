@@ -5,6 +5,7 @@ import {
   ViewContainer,
   Header,
   FlatListSources,
+  VerticalDivider,
 } from '../../components/';
 import {useDeviceOrientation} from '@react-native-community/hooks';
 import {useNavigation} from '@react-navigation/native';
@@ -23,6 +24,7 @@ const News = () => {
   ) : (
     <ViewContainer style={{flexDirection: 'row'}}>
       <FlatListSources />
+      <VerticalDivider />
       <FlatListNews />
     </ViewContainer>
   );

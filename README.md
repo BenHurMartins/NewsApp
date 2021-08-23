@@ -38,6 +38,11 @@ or
 npx react-native run-android
 ```
 
+## Special Feature
+
+Don't forget to turn your screen on landscape, there is a special feature on it.
+<img src="./demoAssets/demo.gif" width="500" height="500" />
+
 ## Stack
 
 - React-Native 0.65.1
